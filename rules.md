@@ -80,3 +80,12 @@ These rules apply to all projects in this workspace unless overridden by a proje
     2.  **Tech Spec**: `docs/TECH_SPEC.md` (How will we build this?)
     3.  **ADRs**: If structural decisions are made.
 - **Approval**: I MUST ask for approval on the Tech Spec before writing the first line of code.
+
+## 9. Project Structure (The Standard Layout)
+All projects MUST adhere to this structure:
+- `src/`: **Source Code**. All implementation logic goes here.
+- `tests/`: **Test Suite**. Mirrors the `src/` structure where possible.
+- `docs/`: **Documentation**. Contains `PRD.md`, `TECH_SPEC.md`, `adr/`.
+- `scripts/`: **Automation**. Helper scripts for build/maintenance.
+- `.agent/`: **Configuration**. The Strict Guardian settings.
+- `dist/`: **Artifacts**. Gitignored build outputs.
