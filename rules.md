@@ -89,3 +89,10 @@ All projects MUST adhere to this structure:
 - `scripts/`: **Automation**. Helper scripts for build/maintenance.
 - `.agent/`: **Configuration**. The Strict Guardian settings.
 - `dist/`: **Artifacts**. Gitignored build outputs.
+
+## 10. Configuration & Secrets
+- **Secrets**: NEVER commit secrets to Git.
+- **Environment**:
+    - MUST use `.env` for local secrets (gitignored).
+    - MUST provide `.env.example` with placeholder values (committed).
+- **Gitignore**: The `.gitignore` file MUST explicitly exclude `.env`, `node_modules`, `.venv`, `dist`, and system files (`.DS_Store`).
