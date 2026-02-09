@@ -63,3 +63,10 @@ These rules apply to all projects in this workspace unless overridden by a proje
 - **General**:
     - **Paths**: Use relative paths. Code must run on any machine after a standard `install` command.
     - **Config**: Do not hardcode absolute paths or user-specific settings. Use env vars or config files.
+
+## 7. Architecture & Decisions
+- **ADRs (Architecture Decision Records)**:
+    - **Requirement**: Any significant architectural decision (e.g., choosing a database, changing a core pattern, adding a major dependency) MUST be documented.
+    - **Location**: Store in `docs/adr/YYYY-MM-DD-title.md`.
+    - **Process**: Before implementing a major change, I MUST draft the ADR and ask for approval.
+- **Diagrams**: Use Mermaid.js for complex flows.

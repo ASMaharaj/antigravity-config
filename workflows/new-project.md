@@ -15,6 +15,9 @@ This workflow sets up a new project with the strict standards defined in `.agent
     *   **Install Antigravity Config** (Eject Mode):
         *   Run `git clone https://github.com/ASMHB/antigravity-config.git .agent`.
         *   Run `rm -rf .agent/.git` (Detach from global repo to make it standalone).
+    *   **Initialize Docs**:
+        *   Create `docs/adr`.
+        *   Copy `.agent/templates/ADR.md` -> `docs/adr/0000-template.md`.
     *   Create `.gitignore` (ensure `.agent` is NOT ignored, so rules are committed).
 
 3.  **Language Setup**:
