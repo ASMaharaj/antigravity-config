@@ -43,6 +43,7 @@ This workflow sets up a new project with the strict standards defined in `.agent
         *   Install `typescript`, `eslint`, `prettier`, `jest`/`vitest`.
         *   Create `tsconfig.json` with `"strict": true`.
         *   Create `.eslintrc` and `.prettierrc` with strict rules.
+        *   **Git Hooks**: Run workflow `.agent/workflows/setup-hooks.md`.
     *   **If Python**:
         *   Create virtual environment (`python3 -m venv .venv`).
         *   Create directory structure (`src`, `tests`).
@@ -55,6 +56,7 @@ This workflow sets up a new project with the strict standards defined in `.agent
             pytest
             ```
         *   Install dependencies: `source .venv/bin/activate && pip install -r requirements.txt`.
+        *   **Git Hooks**: Run workflow `.agent/workflows/setup-hooks.md`.
 
 4.  **Initial Commit**:
     *   Commit with message "feat: Initial project setup with strict defaults".
