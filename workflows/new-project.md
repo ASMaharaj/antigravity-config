@@ -13,7 +13,7 @@ This workflow sets up a new project with the strict standards defined in `.agent
     *   Create directory.
     *   Initialize git.
     *   **Install Antigravity Config** (Eject Mode):
-        *   Run `git clone https://github.com/ASMaharaj/antigravity-config.git .agent`.
+        *   Run `git clone https://github.com/ASMHB/antigravity-config.git .agent`.
         *   Run `rm -rf .agent/.git` (Detach from global repo to make it standalone).
     *   **Project Setup**:
         *   **Structure**:

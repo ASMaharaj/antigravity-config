@@ -13,7 +13,7 @@ This workflow brings an existing project back into compliance with the Strict Gu
     *   Ask: "Shall I overwrite configs with the latest Golden Masters?"
 
 3.  **Update Configs**:
-    *   **Applies to TypeSript**:
+    *   **Applies to TypeScript**:
         *   **Copy** `.agent/configs/tsconfig.base.json` -> `tsconfig.json`.
         *   **Copy** `.agent/configs/.eslintrc.base.js` -> `.eslintrc.js`.
         *   **Copy** `.agent/configs/.prettierrc.json` -> `.prettierrc.json`.
