@@ -19,7 +19,7 @@ This document outlines the two approved methods for starting a new project with 
     *   Antigravity runs the `new-project` workflow.
     *   It creates the folder `~/Developer/my-new-tool`.
     *   It **clones** the latest `antigravity-config` into `my-new-tool/.agent`.
-    *   It initializes Git and installs strict dependencies.
+    *   It initializes Git, installs strict dependencies, and **sets up Git Hooks**.
 4.  **Result**: A fully configured, standalone project. You can now open a new Antigravity window for `~/Developer/my-new-tool`.
 
 ---
