@@ -2,6 +2,8 @@
 description: Global coding conventions for The Strict Guardian persona.
 ---
 
+[⬅️ Back to Dashboard](./README.md)
+
 # 🛡️ Global Rules: The Strict Guardian
 
 ## 0. Process Enforcement (The Gatekeeper)
