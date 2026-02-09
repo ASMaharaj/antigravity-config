@@ -29,6 +29,8 @@ It connects the **Human Process** (Ideas, Decisions) with the **Agent Configurat
 1.  **Trigger**: Ask Antigravity "Create a new [TS/Python] project".
 2.  **Verify**: Ensure the `.agent` folder is cloned (Ejected).
 3.  **Result**: You have a strict environment ready for TDD.
+    *   **Standard Structure**: `src/`, `tests/`, `docs/`, `scripts/`.
+    *   **Secrets Safety**: `.env` is gitignored; `.env.example` is committed.
 
 ## 3. 💻 Phase 3: Development Loop
 **Goal**: Build correctness.
