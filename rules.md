@@ -111,3 +111,10 @@ All projects MUST adhere to this structure:
 - **Dependencies**: Regular audits MUST be performed using `secure-deps`.
 - **Vulnerabilities**: Critical/High vulnerabilities block any release.
 
+## 14. Git Hooks (Hard Gate)
+- **Requirement**: Automated checks MUST run before every commit.
+- **Tools**:
+    - **TypeScript**: `husky` + `lint-staged`.
+    - **Python**: `pre-commit`.
+- **Policy**: Bypassing hooks (`git commit --no-verify`) is strictly forbidden on main branches.
+
