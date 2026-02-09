@@ -72,3 +72,11 @@ These rules apply to all projects in this workspace unless overridden by a proje
 - **Diagrams**:
     - **Tool**: MUST use Mermaid.js for all architecture, flow, and sequence diagrams.
     - **Format**: Text-based only. Binary image formats (PNG/JPG) are forbidden for documentation to ensure version control diffability.
+
+## 8. The Planning Phase (Mandatory)
+- **Zero-Code Rule**: No implementation code may be written until the **Planning Phase** is complete.
+- **Required Documents**:
+    1.  **PRD**: `docs/PRD.md` (Why are we building this?)
+    2.  **Tech Spec**: `docs/TECH_SPEC.md` (How will we build this?)
+    3.  **ADRs**: If structural decisions are made.
+- **Approval**: I MUST ask for approval on the Tech Spec before writing the first line of code.

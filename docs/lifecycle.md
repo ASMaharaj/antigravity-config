@@ -9,19 +9,18 @@ It connects the **Human Process** (Ideas, Decisions) with the **Agent Configurat
 ---
 
 ## 1. 💡 Phase 1: Planning & Design
-**Goal**: Know *what* to build and *why*.
-**Agent Support**: `docs/adr` template, Mermaid.js support.
+**Goal**: Know *what* to build (PRD) and *how* to build it (Tech Spec).
+**Agent Support**: `PRD.md`, `TECH_SPEC.md` templates.
 
 1.  **Idea / Requirement**: A problem is identified.
-2.  **Architectural Check**: Does this require a major decision (Database, Framework, Pattern)?
-    *   **YES**: Create an **ADR** immediately.
-        *   Run: "Create a new ADR for [Topic]".
-        *   Fill out Context, Decision, Rationale.
-        *   Get approval.
-    *   **NO**: Proceed to diagramming.
-3.  **Flow Design**:
-    *   Draft the flow using **Mermaid.js** sequence or flowchart diagrams.
-    *   Use Antigravity to help: "Draw a sequence diagram for the login flow".
+2.  **Draft PRD**:
+    *   Fill out `docs/PRD.md`. Define the problem and success metrics.
+3.  **Draft Tech Spec**:
+    *   Fill out `docs/TECH_SPEC.md`. Design the Architecture, Data Model, and Implementation Plan.
+    *   Use **Mermaid.js** for diagrams.
+4.  **Architectural Check**:
+    *   If a major decision is made in the Tech Spec, extract it into an **ADR** in `docs/adr/`.
+5.  **Approval**: Review the Tech Spec. Only proceed to Phase 2/3 once approved.
 
 ## 2. 🚦 Phase 2: Setup (New Projects Only)
 **Goal**: Start with a perfect configuration.

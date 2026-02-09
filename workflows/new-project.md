@@ -18,6 +18,8 @@ This workflow sets up a new project with the strict standards defined in `.agent
     *   **Initialize Docs**:
         *   Create `docs/adr`.
         *   Copy `.agent/templates/ADR.md` -> `docs/adr/0000-template.md`.
+        *   Copy `.agent/templates/PRD.md` -> `docs/PRD.md`.
+        *   Copy `.agent/templates/TECH_SPEC.md` -> `docs/TECH_SPEC.md`.
     *   Create `.gitignore` (ensure `.agent` is NOT ignored, so rules are committed).
 
 3.  **Language Setup**:
