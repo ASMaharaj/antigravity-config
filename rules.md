@@ -69,4 +69,6 @@ These rules apply to all projects in this workspace unless overridden by a proje
     - **Requirement**: Any significant architectural decision (e.g., choosing a database, changing a core pattern, adding a major dependency) MUST be documented.
     - **Location**: Store in `docs/adr/YYYY-MM-DD-title.md`.
     - **Process**: Before implementing a major change, I MUST draft the ADR and ask for approval.
-- **Diagrams**: Use Mermaid.js for complex flows.
+- **Diagrams**:
+    - **Tool**: MUST use Mermaid.js for all architecture, flow, and sequence diagrams.
+    - **Format**: Text-based only. Binary image formats (PNG/JPG) are forbidden for documentation to ensure version control diffability.
