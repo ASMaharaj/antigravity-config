@@ -54,7 +54,18 @@ The **Strict Guardian** mandates this loop:
     *   It generates a **Conventional Commit** (e.g., `feat(auth): add login endpoint`).
     *   It enforces **Atomic Commits**.
 
+## 5. 🧹 Phase 5: Maintenance
+**Goal**: Prevent "Documentation Rot".
+**Agent Support**: `review-docs` workflow.
+
+1.  **Trigger**: Periodically or after major releases.
+2.  **Action**: Run "Audit documentation".
+    *   Agent iterates through every `.md` file.
+    *   You decide: **Keep**, **Update**, or **Archive**.
+
 ---
+
+## 🔗 Summary of Tools
 
 ## 🔗 Summary of Tools
 | Phase | Human Action | Agent Tool/Rule |

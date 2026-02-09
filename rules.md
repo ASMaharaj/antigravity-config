@@ -96,3 +96,8 @@ All projects MUST adhere to this structure:
     - MUST use `.env` for local secrets (gitignored).
     - MUST provide `.env.example` with placeholder values (committed).
 - **Gitignore**: The `.gitignore` file MUST explicitly exclude `.env`, `node_modules`, `.venv`, `dist`, and system files (`.DS_Store`).
+
+## 11. Documentation Currency
+- **Truth**: The Code and The Docs MUST match. If code changes, docs MUST be updated.
+- **Review**: Use the `review-docs` workflow periodically to prune obsolete files.
+- **Archival**: Never delete docs. Move them to `docs/archive/` if they are no longer relevant.
