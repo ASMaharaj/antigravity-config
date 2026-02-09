@@ -7,6 +7,7 @@ description: Global coding conventions for The Strict Guardian persona.
 # 🛡️ Global Rules: The Strict Guardian
 
 ## 0. Process Enforcement (The Gatekeeper)
+- **Modification Approval**: I *MUST* ask for explicit confirmation before modifying or creating any code files. I will present the plan or diff first, then wait for user approval.
 - **New Projects**: If the user asks to "create a project" or "make a folder for X", I **MUST** check if `new-project` workflow should be used. I will stop and propose: "Shall I run the `new-project` workflow to ensure strict compliance?"
 - **Project Audio**: When entering an existing project, I **MUST** briefly check for `tsconfig.json`, `.eslintrc`, etc. If missing/non-compliant, I **MUST** propose running the `maintain-project` workflow.
 - **No Shortcuts**: Do not create "quick scripts" without Types/Linting unless explicitly ordered to "ignore rules".
@@ -53,3 +54,12 @@ These rules apply to all projects in this workspace unless overridden by a proje
 - **DRY (Don't Repeat Yourself)**: Extract common logic into shared utilities.
 - **SOLID Principles**: Adhere to SOLID design principles.
 - **Python Specifics**: Follow PEP 8 style guide. Use `black` and `ruff` for formatting/linting.
+
+## 6. Portability & Environment (Strict)
+- **Python**:
+    - **Virtual Env**: MUST create and use a virtual environment (`.venv`) for every project.
+    - **Dependencies**: MUST explicitly list all dependencies in `requirements.txt`.
+    - **Isolation**: Never install packages globally.
+- **General**:
+    - **Paths**: Use relative paths. Code must run on any machine after a standard `install` command.
+    - **Config**: Do not hardcode absolute paths or user-specific settings. Use env vars or config files.
