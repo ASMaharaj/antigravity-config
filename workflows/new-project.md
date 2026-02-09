@@ -24,10 +24,17 @@ This workflow sets up a new project with the strict standards defined in `.agent
         *   Create `tsconfig.json` with `"strict": true`.
         *   Create `.eslintrc` and `.prettierrc` with strict rules.
     *   **If Python**:
-        *   Create virtual environment (`python -m venv .venv`).
-        *   Create `requirements.txt` / `pyproject.toml`.
-        *   Install `mypy`, `ruff`, `pytest`, `black`.
-        *   Create `codestyle` config files.
+        *   Create virtual environment (`python3 -m venv .venv`).
+        *   Create directory structure (`src`, `tests`).
+        *   **Copy Config**: `.agent/configs/pyproject.base.toml` -> `pyproject.toml`.
+        *   Create `requirements.txt` with:
+            ```text
+            mypy
+            ruff
+            black
+            pytest
+            ```
+        *   Install dependencies: `source .venv/bin/activate && pip install -r requirements.txt`.
 
 4.  **Initial Commit**:
     *   Commit with message "feat: Initial project setup with strict defaults".
