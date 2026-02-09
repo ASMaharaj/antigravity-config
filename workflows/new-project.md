@@ -12,7 +12,10 @@ This workflow sets up a new project with the strict standards defined in `.agent
 2.  **Scaffold Project**:
     *   Create directory.
     *   Initialize git.
-    *   Create `.gitignore`.
+    *   **Install Antigravity Config** (Eject Mode):
+        *   Run `git clone https://github.com/ASMHB/antigravity-config.git .agent`.
+        *   Run `rm -rf .agent/.git` (Detach from global repo to make it standalone).
+    *   Create `.gitignore` (ensure `.agent` is NOT ignored, so rules are committed).
 
 3.  **Language Setup**:
     *   **If TypeScript**:
