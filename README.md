@@ -11,7 +11,7 @@
 | **[📜 Global Rules](./rules.md)** | **The Law**. Coding standards, testing philosophy, and strictness levels. |
 | **[� Lifecycle (SDLC)](./docs/lifecycle.md)** | **The Process**. From Idea → Design → TDD → Commit. |
 | **[�🚀 Getting Started](./docs/getting-started.md)** | How to set up this config on a new machine or start a new project. |
-| **[⚙️ Workflows](./workflows/)** | Automations (`new-project`, `maintain-project`, `review-docs`). |
+| **[⚙️ Workflows](./workflows/)** | Automations (`new`, `release`, `audit`, `docs`). |
 | **[🧠 Skills](./skills/)** | Ad-hoc capabilities (e.g., Git Master). |
 | **[🔧 Configs](./configs/)** | Golden Master configuration files (`ts`, `eslint`). |
 | **[🛠️ Maintenance](./docs/maintenance.md)** | **Read Me First** on a new machine. How to modify the system. |

@@ -101,3 +101,13 @@ All projects MUST adhere to this structure:
 - **Truth**: The Code and The Docs MUST match. If code changes, docs MUST be updated.
 - **Review**: Use the `review-docs` workflow periodically to prune obsolete files.
 - **Archival**: Never delete docs. Move them to `docs/archive/` if they are no longer relevant.
+
+## 12. Changes & Releases
+- **Versioning**: MUST use Semantic Versioning (Major.Minor.Patch).
+- **Changelog**: MUST maintain a `CHANGELOG.md`. Use the `release-version` workflow to generate it.
+- **Git Tags**: Every production release MUST be Git tagged.
+
+## 13. Security
+- **Dependencies**: Regular audits MUST be performed using `secure-deps`.
+- **Vulnerabilities**: Critical/High vulnerabilities block any release.
+
