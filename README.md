@@ -9,7 +9,8 @@
 | Section | Description |
 | :--- | :--- |
 | **[📜 Global Rules](./rules.md)** | **The Law**. Coding standards, testing philosophy, and strictness levels. |
-| **[🚀 Getting Started](./docs/getting-started.md)** | How to set up this config on a new machine or start a new project. |
+| **[� Lifecycle (SDLC)](./docs/lifecycle.md)** | **The Process**. From Idea → Design → TDD → Commit. |
+| **[�🚀 Getting Started](./docs/getting-started.md)** | How to set up this config on a new machine or start a new project. |
 | **[⚙️ Workflows](./workflows/)** | Automations for creating and maintaining projects. |
 | **[🧠 Skills](./skills/)** | Ad-hoc capabilities (e.g., Git Master). |
 | **[🔧 Configs](./configs/)** | Golden Master configuration files (`ts`, `eslint`). |

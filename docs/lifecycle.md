@@ -1,0 +1,64 @@
+[⬅️ Back to Dashboard](../README.md)
+
+# 🔄 Engineering Lifecycle (SDLC)
+
+This document describes **The Application** of our rules. It answers: "How do we actually build software here?"
+
+It connects the **Human Process** (Ideas, Decisions) with the **Agent Configuration** (ADRs, Tests, Git).
+
+---
+
+## 1. 💡 Phase 1: Planning & Design
+**Goal**: Know *what* to build and *why*.
+**Agent Support**: `docs/adr` template, Mermaid.js support.
+
+1.  **Idea / Requirement**: A problem is identified.
+2.  **Architectural Check**: Does this require a major decision (Database, Framework, Pattern)?
+    *   **YES**: Create an **ADR** immediately.
+        *   Run: "Create a new ADR for [Topic]".
+        *   Fill out Context, Decision, Rationale.
+        *   Get approval.
+    *   **NO**: Proceed to diagramming.
+3.  **Flow Design**:
+    *   Draft the flow using **Mermaid.js** sequence or flowchart diagrams.
+    *   Use Antigravity to help: "Draw a sequence diagram for the login flow".
+
+## 2. 🚦 Phase 2: Setup (New Projects Only)
+**Goal**: Start with a perfect configuration.
+**Agent Support**: `new-project` workflow.
+
+1.  **Trigger**: Ask Antigravity "Create a new [TS/Python] project".
+2.  **Verify**: Ensure the `.agent` folder is cloned (Ejected).
+3.  **Result**: You have a strict environment ready for TDD.
+
+## 3. 💻 Phase 3: Development Loop
+**Goal**: Build correctness.
+**Agent Support**: Strict Rules (Gatekeeper), Vitest/Pytest.
+
+The **Strict Guardian** mandates this loop:
+1.  **🔴 Red**: Write a failing test for the specific feature.
+    *   *Agent Rule*: "I will not write implementation code until I see a test."
+2.  **🟢 Green**: Write just enough code to pass the test.
+    *   *Agent Rule*: "I will confirm with you before modifying files."
+3.  **🔵 Refactor**: Improve the code structure.
+    *   **Static Analysis**: ESLint/Ruff/Mypy runs automatically.
+
+## 4. 📦 Phase 4: Delivery
+**Goal**: Save history cleanly.
+**Agent Support**: `git-master` skill.
+
+1.  **Stage**: `git add .`
+2.  **Commit**: Ask Antigravity "Commit these changes".
+    *   It analyzes the diff.
+    *   It generates a **Conventional Commit** (e.g., `feat(auth): add login endpoint`).
+    *   It enforces **Atomic Commits**.
+
+---
+
+## 🔗 Summary of Tools
+| Phase | Human Action | Agent Tool/Rule |
+| :--- | :--- | :--- |
+| **Design** | Write ADR / Draw Flow | `docs/adr/*.md`, Mermaid.js |
+| **Setup** | "Create project" | `new-project` workflow (Eject) |
+| **Code** | Write Tests | `rules.md` (TDD, Types) |
+| **Commit** | "Commit changes" | `git-master` skill |
