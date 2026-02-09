@@ -31,10 +31,11 @@ It connects the **Human Process** (Ideas, Decisions) with the **Agent Configurat
 3.  **Result**: You have a strict environment ready for TDD.
     *   **Standard Structure**: `src/`, `tests/`, `docs/`, `scripts/`.
     *   **Secrets Safety**: `.env` is gitignored; `.env.example` is committed.
+    *   **Git Hooks**: `husky` (TS) or `pre-commit` (Python) are automatically installed.
 
 ## 3. 💻 Phase 3: Development Loop
 **Goal**: Build correctness.
-**Agent Support**: Strict Rules (Gatekeeper), Vitest/Pytest.
+**Agent Support**: Strict Rules (Gatekeeper), Vitest/Pytest, Git Hooks.
 
 The **Strict Guardian** mandates this loop:
 1.  **🔴 Red**: Write a failing test for the specific feature.
@@ -45,23 +46,23 @@ The **Strict Guardian** mandates this loop:
     *   **Static Analysis**: ESLint/Ruff/Mypy runs automatically.
 
 ## 4. 📦 Phase 4: Delivery
-**Goal**: Save history cleanly.
-**Agent Support**: `git-master` skill.
+**Goal**: Save history cleanly and release safely.
+**Agent Support**: `git-master`, `release-version` workflow.
 
 1.  **Stage**: `git add .`
 2.  **Commit**: Ask Antigravity "Commit these changes".
-    *   It analyzes the diff.
-    *   It generates a **Conventional Commit** (e.g., `feat(auth): add login endpoint`).
-    *   It enforces **Atomic Commits**.
+    *   **Auto-Check**: Git Hooks will run `lint`, `format`, and `test`. If they fail, the commit is blocked.
+    *   **Success**: A **Conventional Commit** is generated.
+3.  **Release**:
+    *   Run "Prepare release".
+    *   Agent analyzes history, bumps version, updates `CHANGELOG.md`, and creates a Git Tag.
 
 ## 5. 🧹 Phase 5: Maintenance
-**Goal**: Prevent "Documentation Rot".
-**Agent Support**: `review-docs` workflow.
+**Goal**: Prevent "Documentation Rot" and "Dependency Vulnerabilities".
+**Agent Support**: `review-docs`, `secure-deps`.
 
-1.  **Trigger**: Periodically or after major releases.
-2.  **Action**: Run "Audit documentation".
-    *   Agent iterates through every `.md` file.
-    *   You decide: **Keep**, **Update**, or **Archive**.
+1.  **Docs**: Run "Audit documentation" to prune obsolete files.
+2.  **Security**: Run "Audit dependencies" (`secure-deps`) to find vulnerabilities.
 
 ---
 
