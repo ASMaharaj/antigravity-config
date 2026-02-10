@@ -38,9 +38,11 @@ This workflow installs and configures pre-commit hooks to enforce code quality.
             rev: 23.3.0
             hooks:
               - id: black
-          - repo: https://github.com/charliermarsh/ruff-pre-commit
-            rev: v0.0.261
+          - repo: https://github.com/astral-sh/ruff-pre-commit
+            rev: v0.15.0
             hooks:
               - id: ruff
+                args: [--fix]
+              - id: ruff-format
         ```
     *   Run `pre-commit install`.
